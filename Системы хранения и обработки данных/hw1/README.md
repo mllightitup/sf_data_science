@@ -58,6 +58,18 @@
 
 ![Диаграмма](dbdiagram.png)
 
+## Скрины из DBeaver:
+
+Таблицы и их заполненность:
+
+![image](https://github.com/mllightitup/sf_data_science/assets/43480503/af6f29ae-913c-46f9-9753-8f6c5851d593)
+
+Первые 30 строк таблицы transaction:
+
+![image](https://github.com/mllightitup/sf_data_science/assets/43480503/28bfb64c-9ed0-4c19-8cd0-58384b29e6ad)
+
+
+
 ## Файлы проекта
 - ```hw1_data.xlsx``` - оригинальный датасет
 - ```pg_py.ipynb``` - код на python для импорта датасета в postgres, а так же создание справочников в цикле
