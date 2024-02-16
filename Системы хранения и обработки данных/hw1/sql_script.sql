@@ -1,3 +1,4 @@
+--HW 1
 --ОСПРАВОЧНИКИ СОЗДАЮТСЯ В СКРИПТЕ JUPYTER NOTEBOOK
 
 --Создаем справочник штатов - state
@@ -9,7 +10,7 @@ create table state as
 		where state is not null
 	) x
 	
---Создаем справочник адресов - state
+--Создаем справочник адресов - address
 create table address as 
 	select ROW_NUMBER() over() as id, postcode, x.id state_id, address name from
 	(
@@ -61,9 +62,9 @@ create table customer as
 		customer_id,
 		address.id address_id,
 		gender.id gender_id,
-		job_title job_title_id,
-		wealth_segment wealth_segment_id,
-		job_industry_category job_industry_category_id,
+		job_title.id job_title_id,
+		wealth_segment.id wealth_segment_id,
+		job_industry_category.id job_industry_category_id,
 		first_name,
 		last_name,
 		"DOB",
@@ -71,7 +72,7 @@ create table customer as
 		owns_car,
 		property_valuation
 		from customer_tmp
-		join address on customer_tmp.address = address.name
+		join address on customer_tmp.address = address.name and address.postcode = customer_tmp.postcode
 		join gender on customer_tmp.gender = gender.name
 		join job_title on customer_tmp.job_title = job_title.name
 		join wealth_segment on customer_tmp.wealth_segment = wealth_segment.name
@@ -101,3 +102,19 @@ create table "transaction" as
 		join order_status on transaction_tmp.order_status = order_status.name
 		--where product_id is not null
 	) x
+
+ALTER TABLE customer ADD PRIMARY KEY (id);
+ALTER TABLE job_title ADD PRIMARY KEY (id);
+ALTER TABLE job_industry_category ADD PRIMARY KEY (id);
+ALTER TABLE wealth_segment ADD PRIMARY KEY (id);
+ALTER TABLE gender ADD PRIMARY KEY (id);
+ALTER TABLE address ADD PRIMARY KEY (id);
+ALTER TABLE state ADD PRIMARY KEY (id);
+ALTER TABLE country ADD PRIMARY KEY (id);
+--ALTER TABLE product ADD PRIMARY KEY (id);
+ALTER TABLE brand ADD PRIMARY KEY (id);
+ALTER TABLE product_line ADD PRIMARY KEY (id);
+ALTER TABLE product_class ADD PRIMARY KEY (id);
+ALTER TABLE product_size ADD PRIMARY KEY (id);
+ALTER TABLE transaction ADD PRIMARY KEY (id);
+ALTER TABLE order_status ADD PRIMARY KEY (id);
