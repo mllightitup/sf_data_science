@@ -16,20 +16,21 @@
 
 4. Результат выполнения: (`1 балл` Вывести все бренды, которые закупают клиенты, работающие в сфере Financial Services)
 
-![image](https://github.com/mllightitup/sf_data_science/assets/43480503/389481f4-4bd2-42d3-a84f-9d0ae43a1ab1)
+![image](https://github.com/mllightitup/sf_data_science/assets/43480503/4d0a56d9-fb94-46f6-b773-36e3b3a49927)
 
 5. Результат выполнения: (`1 балл` Вывести 10 клиентов, которые оформили онлайн-заказ продукции из брендов 'Giant Bicycles', 'Norco Bicycles', 'Trek Bicycles'.)
 
-![image](https://github.com/mllightitup/sf_data_science/assets/43480503/369cba9a-2708-4e4f-a4e1-14db70e62af3)
+![image](https://github.com/mllightitup/sf_data_science/assets/43480503/89cfc13a-0b3c-4f9b-b9f5-c3d8e465ff67)
 
 6. Результат выполнения: (`1 балл` Вывести всех клиентов, у которых нет транзакций.)<br>`507 Записей`<br>
 
-![image](https://github.com/mllightitup/sf_data_science/assets/43480503/4350e56a-3606-4d16-bc51-f2cd618cd27d)
-   
+![image](https://github.com/mllightitup/sf_data_science/assets/43480503/5f2163a1-6640-4692-8f9a-26b47feb7399)
+
 7. Результат выполнения: (`2 балла` Вывести всех клиентов из IT, у которых транзакции с максимальной стандартной стоимостью.)
 
-![image](https://github.com/mllightitup/sf_data_science/assets/43480503/13a47afe-6e1c-4814-bfcb-079c04fa9099)
+![image](https://github.com/mllightitup/sf_data_science/assets/43480503/9f9e23eb-d44f-432f-8ada-ec73cecd7f71)
 
 8. Результат выполнения: (`2 балла` Вывести всех клиентов из сферы IT и Health, у которых есть подтвержденные транзакции за период '2017-07-07' по '2017-07-17'.)<br>`115 Записей`<br>
 
-![image](https://github.com/mllightitup/sf_data_science/assets/43480503/e4515991-ecea-4e37-8821-69b5e6d64e4e)
+![image](https://github.com/mllightitup/sf_data_science/assets/43480503/73002adf-4115-4ee6-b5fd-02942bebe3d4)
+
